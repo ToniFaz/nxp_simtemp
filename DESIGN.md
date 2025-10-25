@@ -1,6 +1,8 @@
+# Arquitectura del Sistema
 
-Architecture
+## Diagrama de Componentes
 
+```
 ┌─────────────────┐    sysfs/ioctl    ┌──────────────────┐
 │  Userspace      │◄─────────────────►│   Kernel Space   │
 │  Application    │                   │                  │
@@ -19,6 +21,7 @@ Architecture
                                       │ │ └──────────┘ │ │
                                       │ └──────────────┘ │
                                       └──────────────────┘
+```
 Userspace ↔ Kernel Communication
 Character Device (/dev/simtemp): Primary interface for data reading
 read(): Blocks until temperature samples are available
