@@ -1,0 +1,7 @@
+{
+    simtemp0: simtemp@0 {
+        compatible = "nxp,simtemp";  
+        sampling-ms = <500>;         
+        threshold-mC = <42000>;   
+    };
+};
