@@ -19,11 +19,13 @@ https://drive.google.com/file/d/1azi5fwyC3uo7WkWqxI3HC1SKLlSGD5zI/view?usp=shari
 │     └─ build.sh  // 
 |     └─ demo.sh   //
 ```
-1) compilar
+1) first you need to compile decode_samples.
+~~~
 gcc -o decode_samples decode_samples.c
+
 chmod +x build.sh demo.sh
 
-2) then
+3) then
 ./scripts/build.sh
 ./scripts/demo.sh
 
